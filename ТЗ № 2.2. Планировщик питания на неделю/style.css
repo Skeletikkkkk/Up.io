@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: #f5f7fa;
+  color: #2c3e50;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: #1e2a36;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 32px;
+  padding-bottom: 8px;
+}
+
+hr {
+  display: none;
+}
+
+form {
+  background: #fff;
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: block;
+  text-align: left;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 16px;
+}
+
+form p {
+  margin: 12px 0;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 4px;
+  color: #34495e;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ced6e0;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus, select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  margin: 2px;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button[type="button"] {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+button[type="button"]:hover {
+  background: #d5dbdb;
+}
+
+#cancelBtn, #modalCancel {
+  background: #e74c3c;
+  color: #fff;
+}
+
+#cancelBtn:hover, #modalCancel:hover {
+  background: #c0392b;
+}
+
+#modalConfirm {
+  background: #27ae60;
+}
+
+#modalConfirm:hover {
+  background: #219a52;
+}
+
+#formHint, #message {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  margin: 8px 0;
+}
+
+#formHint {
+  background: #fdecea;
+  color: #b71c1c;
+}
+
+#message[hidden], #formHint[hidden] {
+  display: none;
+}
+
+#message {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.dish {
+  background: #fff;
+  padding: 12px 18px;
+  margin: 10px auto;
+  max-width: 650px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dish p {
+  margin: 4px 0;
+}
+
+#menuGrid {
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  width: 100%;
+  max-width: 900px;
+}
+
+th, td {
+  padding: 10px 8px;
+  border: 1px solid #e0e6ed;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+th {
+  background: #ecf0f1;
+  font-weight: 600;
+}
+
+td select {
+  min-width: 120px;
+  font-size: 0.9rem;
+  padding: 6px 8px;
+}
+
+#shoppingList {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 12px auto;
+  text-align: left;
+}
+
+#shoppingList li {
+  background: #fff;
+  padding: 8px 16px;
+  margin: 6px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  display: flex;
+  justify-content: space-between;
+}
+
+#shoppingList li span {
+  font-weight: 600;
+  color: #3498db;
+}
+
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 16px;
+}
+
+#modal[hidden] {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 24px 28px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-content button {
+  margin: 4px 8px;
+}
+
+p:has(> span) {
+  font-size: 1rem;
+  background: #fff;
+  display: inline-block;
+  padding: 8px 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  margin: 8px 0;
+}
+
+.form-actions {
+  text-align: center;
+} 
